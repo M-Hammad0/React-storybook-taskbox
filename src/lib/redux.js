@@ -32,9 +32,9 @@ export const reducer = (state, action) => {
 
 const defaultTasks = [
   { id: '1', title: 'Something', state: 'TASK_INBOX' },
-  { id: '2', title: 'Something more', state: 'TASK_INBOX' },
+  { id: '2', title: 'Pinned Task', state: 'TASK_PINNED' },
   { id: '3', title: 'Something else', state: 'TASK_INBOX' },
-  { id: '4', title: 'Something again', state: 'TASK_INBOX' },
+  { id: '4', title: 'Archived Task', state: 'TASK_ARCHIVED' },
 ];
 
 export default createStore(reducer, { tasks: defaultTasks });
